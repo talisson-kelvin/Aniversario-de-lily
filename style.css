@@ -1,0 +1,12 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Handlee', cursive;
+  background-image: url('https://i.pinimg.com/564x/4d/46/10/4d4610ea9ed7090a38fb16071d1f2403.jpg');
+  background-size: cover;
+  background-position: center;
+  color: #ffffff;
+  text-align: center;
+  overflow-x: hidden;
+}
+/* restante do CSS igual ao já inserido anteriormente (omitido aqui por brevidade) */
