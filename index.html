@@ -1,46 +1,50 @@
-
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Aniversário da Lily</title>
-  <link rel="stylesheet" href="style.css"> <!-- 🔗 ESTA LINHA É ESSENCIAL -->
+  <link rel="stylesheet" href="style.css" />
 </head>
 
 <body>
   <audio autoplay loop>
-    <source src="https://www.bensound.com/bensound-music/bensound-love.mp3" type="audio/mpeg">
+    <source src="https://www.bensound.com/bensound-music/bensound-love.mp3" type="audio/mpeg" />
   </audio>
 
   <div class="overlay">
     <header>
-      <h1>Feliz Aniversário, Lily! 🌸</h1>
-      <p class="subtext">Uma pequena homenagem para você, feita com carinho ✨</p>
+      <h1 class="logo">✨ Lilyverso ✨</h1>
+      <p class="subtext">Uma pequena homenagem para você, feita com carinho 💖</p>
       <div class="countdown" id="countdown"></div>
     </header>
 
-    <div class="bolo">
-      <img src="https://usagif.com/wp-content/uploads/tort-81.gif" alt="Bolo de aniversário">
-    </div>
-
-    <div class="planetary">
+    <!-- 🌍 Planeta antes do bolo -->
+    <div class="planetary fade-in">
       <div class="sun"></div>
       <div class="planet"></div>
     </div>
 
-    <div class="flowers">
-      <img src="https://i.pinimg.com/originals/41/7f/24/417f249fc3e081ca9bcce11111a8613d.gif" class="flower" alt="Girassol">
+    <!-- 🎂 Bolo -->
+    <div class="bolo fade-in">
+      <img src="https://usagif.com/wp-content/uploads/tort-81.gif" alt="Bolo de aniversário" />
     </div>
 
-    <section class="musicas">
+    <!-- 🌸 Flor -->
+    <div class="flowers fade-in">
+      <img src="https://i.pinimg.com/originals/41/7f/24/417f249fc3e081ca9bcce11111a8613d.gif" class="flower" alt="Girassol" />
+    </div>
+
+    <!-- 🎶 Músicas -->
+    <section class="musicas fade-in">
       <h2>Lembrei de te</h2>
-      <a href="https://youtu.be/3JiMr-HgHJ8?si=882T7oGm6Wk0o5NQ" target="_blank">🎵 aliança– Tribalista</a>
-      <a href="https://youtu.be/1GKoM_9CXdU?si=PZhKpcjJRCxdH-jX" target="_blank">🎵 pupila</a>
+      <a href="https://youtu.be/3JiMr-HgHJ8?si=882T7oGm6Wk0o5NQ" target="_blank">🎵 aliança – Tribalista</a>
+      <a href="https://youtu.be/1GKoM_9CXdU?si=PZhKpcjJRCxdH-jX" target="_blank">🎵 Pupila</a>
       <a href="https://youtu.be/w4PljtAiDuA?si=zsVv0uWZukC1Zjt0" target="_blank">🎵 Cachinhos de Caramelo</a>
     </section>
 
-    <div class="poema">
+    <!-- ✍️ Poema -->
+    <div class="poema fade-in">
       <h2>Poema para Lily ✨</h2>
       <p>
         Lily, flor em campo de tulipas,<br/>
@@ -68,7 +72,8 @@
       </p>
     </div>
 
-    <div class="footer-msg">
+    <!-- 💌 Mensagem final -->
+    <div class="footer-msg fade-in">
       <p>Lily, você é minha estrela favorita. Que cada dia seja como uma pincelada de Van Gogh: viva, intensa e apaixonante. Te amo. Com amor, do seu Tátá. ✨</p>
     </div>
   </div>
