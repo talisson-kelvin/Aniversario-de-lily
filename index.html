@@ -78,5 +78,29 @@
       alert('Eu te amo, lily 💗');
     }
   </script>
+<!-- Texto surpresa com máquina de escrever -->
+<div class="mensagem-surpresa fade-in" id="surpresa"></div>
+
+<!-- Script para mostrar mensagem ao clicar na flor -->
+<script>
+  document.querySelector('.flower').addEventListener('click', () => {
+    alert('Você é como girassol: procura a luz, mesmo nos dias nublados 🌻');
+  });
+
+  // Texto com efeito de máquina de escrever
+  const mensagem = "Você ilumina o mundo de quem tem a sorte de te conhecer.";
+  const destino = document.getElementById("surpresa");
+  let i = 0;
+
+  function digitar() {
+    if (i < mensagem.length) {
+      destino.innerHTML += mensagem.charAt(i);
+      i++;
+      setTimeout(digitar, 50);
+    }
+  }
+  setTimeout(digitar, 2000); // espera um pouco e começa a digitar
+</script>
+
 </body>
 </html>
