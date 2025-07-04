@@ -1,3 +1,4 @@
+
 const countdownEl = document.getElementById('countdown');
 const birthday = new Date('2025-07-14T00:00:00').getTime();
 
@@ -13,6 +14,10 @@ function updateCountdown() {
   countdownEl.innerHTML = `Contagem Regressiva para o seu dia:<br>${days} dias, ${hours}h, ${minutes}min e ${seconds}s`;
 }
 setInterval(updateCountdown, 1000);
+
+function showLoveMessage() {
+  alert('Te amo, cachinhos de caramelo! 💖');
+}
 
 setInterval(() => {
   const estrela = document.createElement('div');
