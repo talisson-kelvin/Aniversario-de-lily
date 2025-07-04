@@ -40,10 +40,11 @@ body {
 }
 
 .planetary {
-  margin: 40px auto;
+  margin: 40px auto 100px auto; /* aumenta espaço abaixo */
   position: relative;
   width: 150px;
   height: 150px;
+  z-index: 1; /* camadas atrás */
 }
 
 .sun {
@@ -74,9 +75,16 @@ body {
   100% { transform: rotate(360deg) translateX(60px) rotate(-360deg); }
 }
 
+.bolo {
+  position: relative;
+  z-index: 3; /* bolo acima do sol */
+  margin-bottom: 30px;
+}
+
 .bolo img {
   max-width: 200px;
-  margin: 20px auto;
+  margin: 0 auto;
+  display: block;
 }
 
 .flowers img {
