@@ -45,7 +45,7 @@ body {
   position: relative;
   width: 150px;
   height: 150px;
-  z-index: 1;
+  z-index: 0; /* mais baixo que o bolo */
 }
 
 .sun {
@@ -78,9 +78,8 @@ body {
 
 .bolo {
   position: relative;
-  z-index: 3;
+  z-index: 10; /* maior que o planetary */
 }
-
 .bolo img {
   max-width: 200px;
   margin: 20px auto;
