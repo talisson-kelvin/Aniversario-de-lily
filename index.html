@@ -66,6 +66,9 @@
       </p>
     </div>
 
+    <!-- 💬 Texto surpresa -->
+    <div class="mensagem-surpresa fade-in" id="surpresa"></div>
+
     <!-- 💌 Mensagem final -->
     <div class="footer-msg fade-in">
       <p>Lily, você é minha estrela favorita. Que cada dia seja como uma pincelada de Van Gogh: viva, intensa e apaixonante. Te amo. Com amor, do seu Tátá. ✨</p>
@@ -77,30 +80,36 @@
     function mostrarMensagem() {
       alert('Eu te amo, lily 💗');
     }
-  </script>
-<!-- Texto surpresa com máquina de escrever -->
-<div class="mensagem-surpresa fade-in" id="surpresa"></div>
 
-<!-- Script para mostrar mensagem ao clicar na flor -->
-<script>
-  document.querySelector('.flower').addEventListener('click', () => {
-    alert('Você é como girassol: procura a luz, mesmo nos dias nublados 🌻');
-  });
+    // 💬 Mensagem ao clicar na flor
+    document.querySelector('.flower').addEventListener('click', () => {
+      alert('Você é como um girassol: sempre vira pra luz, mesmo nos dias nublados 🌻');
+    });
 
-  // Texto com efeito de máquina de escrever
-  const mensagem = "Você ilumina o mundo de quem tem a sorte de te conhecer.";
-  const destino = document.getElementById("surpresa");
-  let i = 0;
+    // ⌨️ Máquina de escrever
+    const mensagem = "Você ilumina o mundo de quem tem a sorte de te conhecer.";
+    const destino = document.getElementById("surpresa");
+    let i = 0;
 
-  function digitar() {
-    if (i < mensagem.length) {
-      destino.innerHTML += mensagem.charAt(i);
-      i++;
-      setTimeout(digitar, 50);
+    function digitar() {
+      if (i < mensagem.length) {
+        destino.innerHTML += mensagem.charAt(i);
+        i++;
+        setTimeout(digitar, 50);
+      }
     }
-  }
-  setTimeout(digitar, 2000); // espera um pouco e começa a digitar
-</script>
+    setTimeout(digitar, 2500);
 
+    // 💖 corações flutuantes
+    setInterval(() => {
+      const cora = document.createElement('div');
+      cora.classList.add('cora');
+      cora.innerText = '💖';
+      cora.style.left = Math.random() * window.innerWidth + 'px';
+      document.body.appendChild(cora);
+      setTimeout(() => cora.remove(), 4000);
+    }, 600);
+  </script>
 </body>
 </html>
+
