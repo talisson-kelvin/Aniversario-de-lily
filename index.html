@@ -2,76 +2,89 @@
 <html lang="pt-BR">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Feliz Aniversário, Lily! 🌸</title>
-  <link href="https://fonts.googleapis.com/css2?family=Handlee&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Aniversário da Lily</title>
   <link rel="stylesheet" href="style.css" />
 </head>
+
 <body>
   <audio autoplay loop>
-    <source src="https://www.bensound.com/bensound-music/bensound-love.mp3" type="audio/mpeg">
+    <source src="https://www.bensound.com/bensound-music/bensound-love.mp3" type="audio/mpeg" />
   </audio>
-  <header>
-    <h1>Feliz Aniversário, Lily! 🌸</h1>
-    <p class="subtext">Uma pequena homenagem para você, feita com carinho ✨</p>
-    <div class="countdown" id="countdown"></div>
-  </header>
 
-  <div class="bolo">
-    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/30/Birthday_cake_clipart.svg/512px-Birthday_cake_clipart.svg.png" width="100%" alt="Bolo de aniversário">
-  </div>
+  <div class="overlay">
+    <header>
+      <h1 class="logo">✨ Lilyverso ✨</h1>
+      <p class="subtext">Uma pequena homenagem para você, feita com carinho 💖</p>
+      <div class="countdown" id="countdown"></div>
+    </header>
 
-  <div class="planetary">
-    <div class="sun"></div>
-    <div class="planet"></div>
-  </div>
+    <!-- 🎂 Bolo -->
+    <div class="bolo fade-in">
+      <img src="https://usagif.com/wp-content/uploads/tort-81.gif" alt="Bolo de aniversário" onclick="mostrarMensagem()"/>
+    </div>
 
-  <div class="flowers">
-    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/14/Tulip_-_floriade_canberra.jpg/320px-Tulip_-_floriade_canberra.jpg" class="flower" alt="Tulipa">
-    <img src="https://upload.wikimedia.org/wikipedia/commons/1/15/Lilium_bulbiferum_Orangerote_Lilie_04.jpg" class="flower" alt="Lírio">
-    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/40/Sunflower_sky_backdrop.jpg/320px-Sunflower_sky_backdrop.jpg" class="flower" alt="Girassol">
-  </div>
+    <!-- 🌍 Planeta -->
+    <div class="planetary fade-in">
+      <div class="sun"></div>
+      <div class="planet"></div>
+    </div>
 
-  <section class="musicas">
-    <h2>Suas Músicas Favoritas</h2>
-    <a href="https://www.youtube.com/watch?v=lUp_4LJ8ZqI" target="_blank">Meio a Meio 2 - Tribalista</a>
-    <a href="https://www.youtube.com/watch?v=3cvkU2YFdcE" target="_blank">Sabe depois que eu te conheci</a>
-    <a href="https://youtu.be/w4PljtAiDuA?si=TMxyX6eqrFcWsqmn" target="_blank">Cachinhos de Caramelo</a>
-  </section>
+    <!-- 🌻 Flor -->
+    <div class="flowers fade-in">
+      <img src="https://i.pinimg.com/originals/41/7f/24/417f249fc3e081ca9bcce11111a8613d.gif" class="flower" alt="Girassol" />
+    </div>
 
-  <div class="poema">
-    <h2>Poema para Lily ✨</h2>
-    <p>
-      Lily, flor em campo de tulipas,<br/>
-      Olhar sereno que acalma tempestades.<br/>
-      Com um simples "esquece isso",<br/>
-      Ela resolve o caos em mim com suavidade.
-    </p>
-    <p>
-      Cachinhos de caramelo, doce constelação,<br/>
-      Teu riso é meu eclipse favorito.<br/>
-      Quando fala, o mundo silencia<br/>
-      E meu peito se enche de infinito.
-    </p>
-    <p>
-      Ela não precisa gritar pra ser ouvida,<br/>
-      Nem se exibir pra ser notada.<br/>
-      Lily é Van Gogh ao entardecer:<br/>
-      Intensa, livre, apaixonada.
-    </p>
-    <p>
-      Meu universo gira em torno dela<br/>
-      Como esse planeta orbitando o Sol.<br/>
-      E mesmo quando tudo pesa,<br/>
-      Ela sussurra: "Tátá, esquece isso, meu amor".
-    </p>
-  </div>
+    <!-- 🎶 Músicas -->
+    <section class="musicas fade-in">
+      <h2>Lembrei de te</h2>
+      <a href="https://youtu.be/3JiMr-HgHJ8?si=882T7oGm6Wk0o5NQ" target="_blank">🎵 aliança – Tribalista</a>
+      <a href="https://youtu.be/1GKoM_9CXdU?si=PZhKpcjJRCxdH-jX" target="_blank">🎵 Pupila</a>
+      <a href="https://youtu.be/w4PljtAiDuA?si=zsVv0uWZukC1Zjt0" target="_blank">🎵 Cachinhos de Caramelo</a>
+    </section>
 
-  <div class="footer-msg">
-    <p>Lily, você é minha estrela favorita. Que cada dia seja como uma pincelada de Van Gogh: viva, intensa e apaixonante. Te amo. Com amor, do seu Tátá. ✨</p>
+    <!-- ✍️ Poema -->
+    <div class="poema fade-in">
+      <h2>Poema para Lily ✨</h2>
+      <p>
+        Lily, flor em campo de tulipas,<br/>
+        Olhar sereno que acalma tempestades.<br/>
+        Com um simples "esquece isso",<br/>
+        Ela resolve o caos em mim com suavidade.
+      </p>
+      <p>
+        Cachinhos de caramelo, doce constelação,<br/>
+        Teu riso é meu eclipse favorito.<br/>
+        Quando fala, o mundo silencia<br/>
+        E meu peito se enche de infinito.
+      </p>
+      <p>
+        Ela não precisa gritar pra ser ouvida,<br/>
+        Nem se exibir pra ser notada.<br/>
+        Lily é Van Gogh ao entardecer:<br/>
+        Intensa, livre, apaixonada.
+      </p>
+      <p>
+        Meu universo gira em torno dela<br/>
+        Como esse planeta orbitando o Sol.<br/>
+        E mesmo quando tudo pesa,<br/>
+        Ela sussurra: "Tátá, esquece isso".
+      </p>
+    </div>
+
+    <!-- 💌 Mensagem final -->
+    <div class="footer-msg fade-in">
+      <p>Lily, você é minha estrela favorita. Que cada dia seja como uma pincelada de Van Gogh: viva, intensa e apaixonante. Te amo. Com amor, do seu Tátá. ✨</p>
+    </div>
   </div>
 
   <script src="script.js"></script>
+  <script>
+    function mostrarMensagem() {
+      alert('Te amo 💗');
+    }
+  </script>
 </body>
 </html>
+>
 
