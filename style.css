@@ -5,17 +5,135 @@ body {
   background-image: url('https://i.pinimg.com/564x/4d/46/10/4d4610ea9ed7090a38fb16071d1f2403.jpg');
   background-size: cover;
   background-position: center;
-  text-align: center;
   overflow-x: hidden;
+  text-align: center;
 }
 
-/* NOVO: filtro escuro sobre o fundo */
 .overlay {
-  background-color: rgba(0, 0, 0, 0.5); /* camada escura */
+  background-color: rgba(0, 0, 0, 0.5);
   min-height: 100vh;
   width: 100%;
   color: white;
   text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.8);
   padding: 2rem;
   box-sizing: border-box;
+}
+
+.fade-in {
+  animation: fadeIn 2s ease-in;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+.logo {
+  font-size: 2.5rem;
+  color: #ffe0f0;
+  animation: pulse 2s infinite alternate;
+}
+
+@keyframes pulse {
+  from { transform: scale(1); }
+  to   { transform: scale(1.05); }
+}
+
+.planetary {
+  margin: 40px auto;
+  position: relative;
+  width: 150px;
+  height: 150px;
+}
+
+.sun {
+  width: 50px;
+  height: 50px;
+  background: gold;
+  border-radius: 50%;
+  position: absolute;
+  top: 50px;
+  left: 50px;
+  z-index: 2;
+  box-shadow: 0 0 20px 5px yellow;
+}
+
+.planet {
+  width: 30px;
+  height: 30px;
+  background: lightblue;
+  border-radius: 50%;
+  position: absolute;
+  animation: orbit 5s linear infinite;
+  top: 0;
+  left: 60px;
+}
+
+@keyframes orbit {
+  0% { transform: rotate(0deg) translateX(60px) rotate(0deg); }
+  100% { transform: rotate(360deg) translateX(60px) rotate(-360deg); }
+}
+
+.bolo img {
+  max-width: 200px;
+  margin: 20px auto;
+}
+
+.flowers img {
+  width: 120px;
+}
+
+.musicas a {
+  display: block;
+  color: #ffccff;
+  font-weight: bold;
+  text-decoration: none;
+  margin: 8px 0;
+  transition: color 0.3s;
+}
+
+.musicas a:hover {
+  color: #ffd3f8;
+}
+
+.poema {
+  margin-top: 30px;
+  line-height: 1.8;
+  font-size: 1.1rem;
+}
+
+.footer-msg {
+  margin-top: 30px;
+  font-style: italic;
+  font-size: 1.2rem;
+}
+
+.estrela {
+  position: fixed;
+  width: 8px;
+  height: 8px;
+  background: white;
+  border-radius: 50%;
+  animation: cair 5s linear;
+  z-index: 9999;
+}
+
+@keyframes cair {
+  0% { opacity: 1; transform: translateY(0); }
+  100% { opacity: 0; transform: translateY(100vh); }
+}
+
+@media (max-width: 600px) {
+  .planetary, .bolo img, .flowers img {
+    width: 100px;
+    height: auto;
+  }
+
+  .logo {
+    font-size: 2rem;
+  }
+
+  .poema, .footer-msg {
+    font-size: 1rem;
+  }
 }
