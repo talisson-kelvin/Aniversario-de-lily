@@ -27,3 +27,12 @@ setInterval(() => {
   document.body.appendChild(estrela);
   setTimeout(() => estrela.remove(), 5000);
 }, 300);
+// corações flutuantes
+setInterval(() => {
+  const cora = document.createElement('div');
+  cora.classList.add('cora');
+  cora.innerText = '💖';
+  cora.style.left = Math.random() * window.innerWidth + 'px';
+  document.body.appendChild(cora);
+  setTimeout(() => cora.remove(), 4000);
+}, 600);
