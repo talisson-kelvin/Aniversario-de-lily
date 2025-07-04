@@ -21,4 +21,4 @@ setInterval(() => {
   estrela.style.top = '-10px';
   document.body.appendChild(estrela);
   setTimeout(() => estrela.remove(), 5000);
-}, 200);
+}, 300);
