@@ -70,15 +70,15 @@ document.addEventListener('DOMContentLoaded', () => {
     "Nada me deixa mais feliz que te fazer sorrir de verdade.",
     "Você é minha tempestade favorita e minha calmaria também.",
     "Você é a razão de tudo ficar mais bonito.",
-  "Quando você sorri, o mundo se ilumina, mesmo daqui.",
-  "Eu te amo exatamente como você é, em cada detalhe.",
-  "Saber que você existe já me acalma de longe.",
-  "Até sua TPM é parte da sua beleza única.",
-  "Você é meu poema favorito que a vida escreveu.",
-  "Mesmo longe, seu jeito me acerta em cheio.",
-  "Você não precisa ser perfeita. Você já é minha paz.",
-  "A saudade de você é só mais uma forma de amar com intensidade.",
-  "Você transforma qualquer dia nublado em céu claro, mesmo à distância.",
+    "Quando você sorri, o mundo se ilumina, mesmo daqui.",
+    "Eu te amo exatamente como você é, em cada detalhe.",
+    "Saber que você existe já me acalma de longe.",
+    "Até sua TPM é parte da sua beleza única.",
+    "Você é meu poema favorito que a vida escreveu.",
+    "Mesmo longe, seu jeito me acerta em cheio.",
+    "Você não precisa ser perfeita. Você já é minha paz.",
+    "A saudade de você é só mais uma forma de amar com intensidade.",
+    "Você transforma qualquer dia nublado em céu claro, mesmo à distância.",
     // pode continuar até 100!
   ];
 
@@ -92,7 +92,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     setTimeout(() => {
       heartPhrases.style.display = "none";
-    }, 10000);
+    }, 13000);
   });
 });
 // 🧚 Mostrar quadro e tocar música ao clicar em “infinito”
