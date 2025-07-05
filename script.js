@@ -1,4 +1,3 @@
-
 const countdownEl = document.getElementById('countdown');
 const birthday = new Date('2025-07-14T00:00:00').getTime();
 
@@ -36,3 +35,92 @@ setInterval(() => {
   document.body.appendChild(cora);
   setTimeout(() => cora.remove(), 4000);
 }, 600);
+// 💌 Cartinha Diária com Flores 🌸
+function exibirCartinhaDiaria() {
+  const agora = new Date();
+  const hora = agora.getHours();
+
+  const cartinha = document.getElementById('cartinha-diaria');
+  if (hora >= 18 && hora < 24) {
+    cartinha.style.display = 'block';
+  } else {
+    cartinha.style.display = 'none';
+  }
+}
+document.addEventListener('DOMContentLoaded', () => {
+  const frasesFofoas = [
+    "Você é a razão de tudo ficar mais bonito.",
+    "Quando você sorri, o mundo se ilumina.",
+    "Eu te amo do jeitinho que você é: inteira.",
+    "Seu abraço é meu lugar favorito.",
+    "Até sua TPM é um charme. (Às vezes um pouco assustadora, mas linda 😳)",
+    "Você é meu poema favorito que a vida escreveu.",
+    "Nenhuma tristeza dura muito ao seu lado.",
+    "Você não precisa ser perfeita. Você já é minha paz.",
+    "A saudade de você é uma forma de amor gritando.",
+    "Você transforma o ordinário em extraordinário.",
+    "A forma como você cuida... me desmonta todinho.",
+    "Seu jeitinho me vicia, me enfeitiça, me amarra.",
+    "Até quando está brava, eu te acho maravilhosa.",
+    "Você me dá vontade de ser melhor. Por você. Por nós.",
+    "Você não precisa fazer nada pra merecer amor. Só ser você.",
+    "Você é o pedacino do céu.",
+    "Quando você chora, minha alma grita querendo te proteger.",
+    "Seu coração é meu lar.",
+    "Nada me deixa mais feliz que te fazer sorrir de verdade.",
+    "Você é minha tempestade favorita e minha calmaria também.",
+    "Você é a razão de tudo ficar mais bonito.",
+  "Quando você sorri, o mundo se ilumina, mesmo daqui.",
+  "Eu te amo exatamente como você é, em cada detalhe.",
+  "Saber que você existe já me acalma de longe.",
+  "Até sua TPM é parte da sua beleza única.",
+  "Você é meu poema favorito que a vida escreveu.",
+  "Mesmo longe, seu jeito me acerta em cheio.",
+  "Você não precisa ser perfeita. Você já é minha paz.",
+  "A saudade de você é só mais uma forma de amar com intensidade.",
+  "Você transforma qualquer dia nublado em céu claro, mesmo à distância.",
+    // pode continuar até 100!
+  ];
+
+  const heartButton = document.getElementById("heartButton");
+  const heartPhrases = document.getElementById("heartPhrases");
+
+  heartButton.addEventListener("click", () => {
+    const fraseAleatoria = frasesFofoas[Math.floor(Math.random() * frasesFofoas.length)];
+    heartPhrases.innerText = fraseAleatoria;
+    heartPhrases.style.display = "block";
+
+    setTimeout(() => {
+      heartPhrases.style.display = "none";
+    }, 10000);
+  });
+});
+// 🧚 Mostrar quadro e tocar música ao clicar em “infinito”
+document.addEventListener('DOMContentLoaded', () => {
+  const palavra = document.querySelector('.poema span.infinito');
+  const quadro = document.getElementById('quadro-magico');
+  const audio = document.getElementById('audio-magico');
+
+  if (palavra) {
+    palavra.style.cursor = 'pointer';
+    palavra.addEventListener('click', () => {
+      quadro.classList.remove('hidden');
+      audio.play();
+    });
+  }
+});
+// 🌟 Mostrar quadro mágico e tocar música ao clicar em “infinito”
+document.addEventListener('DOMContentLoaded', () => {
+  const palavra = document.querySelector('.poema .infinito');
+  const quadro = document.getElementById('quadro-magico');
+  const audio = document.getElementById('audio-magico');
+
+  if (palavra) {
+    palavra.style.cursor = 'pointer';
+    palavra.addEventListener('click', () => {
+      quadro.classList.remove('hidden');
+      quadro.classList.add('fade-in');
+      audio.play();
+    });
+  }
+});

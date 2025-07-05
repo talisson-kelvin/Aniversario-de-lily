@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
@@ -35,6 +36,7 @@
       <a href="https://youtu.be/3JiMr-HgHJ8?si=882T7oGm6Wk0o5NQ" target="_blank">🎵 aliança – Tribalista</a>
       <a href="https://youtu.be/1GKoM_9CXdU?si=PZhKpcjJRCxdH-jX" target="_blank">🎵 Pupila</a>
       <a href="https://youtu.be/w4PljtAiDuA?si=zsVv0uWZukC1Zjt0" target="_blank">🎵 Cachinhos de Caramelo</a>
+      <a href="https://youtu.be/423K3pipX3c?si=HPLTzcfe6y1V3TAt" target="_blank">🎵 Dias de luta, dias de glória</a> 
     </section>
 
     <!-- ✍️ Poema -->
@@ -50,7 +52,7 @@
         Cachinhos de caramelo, doce constelação,<br/>
         Teu riso é meu eclipse favorito.<br/>
         Quando fala, o mundo silencia<br/>
-        E meu peito se enche de infinito.
+       E meu peito se enche de <span class="misterio" onclick="ativarQuadro()">infinito</span>.
       </p>
       <p>
         Ela não precisa gritar pra ser ouvida,<br/>
@@ -65,6 +67,15 @@
         Ela sussurra: "Tátá, esquece isso".
       </p>
     </div>
+<!-- 🌷 Texto bonito visível -->
+<div class="texto-bonito fade-in">
+  <h2>Para a minha garota 💫</h2>
+  <p>
+    Desde o primeiro dia, você virou meu sol particular. Seu jeito de ver o mundo, de transformar os dias nublados em tardes ensolaradas, me encanta mais do que qualquer coisa. <br/><br/>
+    Lily, seus olhos guardam galáxias e seu sorriso é como constelação que guia meu coração. Você merece todos os quadros, todas as flores, todas as estrelas. <br/><br/>
+    Que este cantinho te abrace nos dias bons e cuide de você nos dias ruins. Porque te amar é uma missão que eu aceito para todos os dias da minha vida.
+  </p>
+</div>
 
     <!-- 💬 Texto surpresa -->
     <div class="mensagem-surpresa fade-in" id="surpresa"></div>
@@ -110,6 +121,14 @@
       setTimeout(() => cora.remove(), 4000);
     }, 600);
   </script>
+  <!-- 💌 Cartinha Diária com Flores -->
+<div id="cartinha-diaria" class="cartinha fade-in" style="display: none;">
+  <p>🌸 Você merece amor e flores todos os dias, minha Lily. 💌</p>
+</div>
+
+<!-- ❤️ Botãozinho de frases de amor -->
+<div id="heartButton">❤️</div>
+<div id="heartPhrases"></div>
+
 </body>
 </html>
-
