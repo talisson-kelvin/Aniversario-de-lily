@@ -56,7 +56,7 @@ document.addEventListener('DOMContentLoaded', () => {
     "Até sua TPM é um charme. (Às vezes um pouco assustadora, mas linda 😳)",
     "Você é meu poema favorito que a vida escreveu.",
     "Nenhuma tristeza dura muito ao seu lado.",
-    "Você não precisa ser perfeita. Você já é minha paz.",
+    "Você não precisa ser perfeita. Você já é minha paz (E é perfeita).",
     "A saudade de você é uma forma de amor gritando.",
     "Você transforma o ordinário em extraordinário.",
     "A forma como você cuida... me desmonta todinho.",
